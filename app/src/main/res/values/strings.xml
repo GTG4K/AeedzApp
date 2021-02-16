@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AeedzApp</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_with_apple">Sign in with Apple</string>
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="or">OR</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="aeedz_app">Aeedz APP</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="login">Login</string>
+    <string name="back">Back</string>
+    <string name="username">Username</string>
+    <string name="hello">Hello!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="register">Register</string>
+</resources>

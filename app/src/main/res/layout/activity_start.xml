@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity"
+    android:background="@drawable/startbg"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+    <ImageView
+        android:id="@+id/startAeedzLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999"
+        app:srcCompat="@drawable/aeedzlogo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tgrd"
+        android:letterSpacing="0.1"
+        android:text="Aeedz App"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startAeedzLogo"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="160dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999">
+
+        <Button
+            android:id="@+id/startBtnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/white_button"
+            android:fontFamily="@font/tgrld"
+            android:letterSpacing="0.075"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@color/AeedzDark"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/white" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:fontFamily="@font/tgrd"
+                android:text="OR"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/startBtnGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/google_sign_in_button"
+            android:fontFamily="@font/tgrld"
+            android:text="sign in with google"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/startBtnFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/facebook_sign_in_button"
+            android:fontFamily="@font/tgrld"
+            android:text="sign in with Facebook"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/startBtnApple"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/apple_sign_in_button"
+            android:fontFamily="@font/tgrld"
+            android:text="sign in with Apple"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/startBtnSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.93">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/upbutton" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/tgrld"
+            android:text="@string/sign_in"
+            android:textAlignment="center"
+            android:textColor="@color/AeedzDark"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/upbutton" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
