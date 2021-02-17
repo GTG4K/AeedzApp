@@ -135,7 +135,7 @@
                 android:textAlignment="center" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/signInForgotPwd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1" />

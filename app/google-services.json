@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1045378154459",
+    "project_id": "aeedzapp",
+    "storage_bucket": "aeedzapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045378154459:android:380a0c710bf3e2b41f71fe",
+        "android_client_info": {
+          "package_name": "com.example.aeedzapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045378154459-d4bleoponngb8920qjtjkid1vksumv6p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aeedzapp",
+            "certificate_hash": "1d986ad70f07855a03e15ade9b8a21b8627e1267"
+          }
+        },
+        {
+          "client_id": "1045378154459-4t94tpp4glg8miov0cakqbs01ar1sg0v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdNTk-_OmOg6lH1Z0gOoIx5fxWV9HSgvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045378154459-4t94tpp4glg8miov0cakqbs01ar1sg0v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
