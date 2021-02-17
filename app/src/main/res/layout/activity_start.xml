@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".StartActivity"
     android:background="@drawable/startbg"
+    android:paddingTop="10dp"
     android:paddingLeft="30dp"
     android:paddingRight="30dp">
 
@@ -17,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19999999"
+        app:layout_constraintVertical_bias="0.3"
         app:srcCompat="@drawable/aeedzlogo" />
 
     <TextView
@@ -53,9 +54,12 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/white_button"
+            android:drawableStart="@drawable/ic_sign_up_icon"
             android:fontFamily="@font/tgrld"
             android:letterSpacing="0.075"
             android:text="@string/sign_up"
+            android:paddingStart="20dp"
+            android:paddingEnd="40dp"
             android:textAllCaps="false"
             android:textColor="@color/AeedzDark"
             android:textSize="25dp" />
@@ -100,7 +104,11 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/google_sign_in_button"
             android:fontFamily="@font/tgrld"
-            android:text="sign in with google"
+            android:textAllCaps="false"
+            android:drawableStart="@drawable/ic_google"
+            android:text="Sign in with google"
+            android:paddingStart="20dp"
+            android:paddingEnd="47dp"
             android:textColor="#FFFFFF"
             android:textSize="18dp" />
 
@@ -108,10 +116,14 @@
             android:id="@+id/startBtnFacebook"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:textAllCaps="false"
             android:layout_marginTop="20dp"
             android:background="@drawable/facebook_sign_in_button"
             android:fontFamily="@font/tgrld"
-            android:text="sign in with Facebook"
+            android:text="Sign in with Facebook"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:drawableStart="@drawable/ic_facebook"
             android:textColor="#FFFFFF"
             android:textSize="18dp" />
 
@@ -122,7 +134,11 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/apple_sign_in_button"
             android:fontFamily="@font/tgrld"
-            android:text="sign in with Apple"
+            android:text="Sign in with Apple"
+            android:paddingStart="20dp"
+            android:paddingEnd="45dp"
+            android:drawableStart="@drawable/ic_apple"
+            android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="18dp" />
 

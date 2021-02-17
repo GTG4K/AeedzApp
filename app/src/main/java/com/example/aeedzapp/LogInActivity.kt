@@ -15,5 +15,10 @@ class LogInActivity : AppCompatActivity() {
             finish()
             overridePendingTransition(R.anim.slide_from_top,R.anim.slide_to_bottom)
         } //Back to start page
+
+        signInForgotPwd.setOnClickListener{
+            val recoverPwdIntent = Intent(this, RecoverPwdActivity::class.java)
+            startActivity(recoverPwdIntent)
+        }
     }
 }
