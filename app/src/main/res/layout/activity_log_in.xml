@@ -8,9 +8,10 @@
     android:background="@drawable/signinbg">
 
     <LinearLayout
-        android:id="@+id/logInBtnBack"
+        android:id="@+id/btn_Back"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:onClick="onClick"
         android:layout_marginStart="30dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
@@ -38,6 +39,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/tgrld"
             android:text="@string/sign_up"
+            android:foreground="?attr/selectableItemBackground"
             android:textAlignment="center"
             android:textColor="@color/AeedzDark"
             android:textSize="45sp" />
@@ -76,7 +78,7 @@
             android:textSize="28sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/et_Email"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="20dp"
@@ -88,7 +90,7 @@
             android:paddingEnd="30dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/et_Pwd"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="20dp"
@@ -107,10 +109,12 @@
 
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_Login"
+                android:onClick="onClick"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground"
                 android:background="@drawable/sign_in_button"
                 android:fontFamily="@font/tgrld"
                 android:text="@string/login"
@@ -119,12 +123,14 @@
                 android:textSize="24sp" />
 
             <TextView
-                android:id="@+id/signInForgotPwd"
+                android:id="@+id/tv_ForgotPwd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="onClick"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:fontFamily="@font/tgrld"
+                android:foreground="?attr/selectableItemBackground"
                 android:text="Forgot Password?"
                 android:textAlignment="center"
                 android:textAllCaps="false"

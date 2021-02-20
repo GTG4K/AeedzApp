@@ -7,6 +7,14 @@
         <item name="colorAccent">#FFFFFF</item>
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="NoTaskBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#3D3D3D</item>
+        <item name="colorPrimaryDark">#1D1D1D</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
         <item name="android:windowTranslucentStatus">true</item>
         <item name="android:windowTranslucentNavigation">false</item>
     </style>

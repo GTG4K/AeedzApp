@@ -16,4 +16,12 @@
     <string name="password">Password</string>
     <string name="repeat_password">Repeat Password</string>
     <string name="register">Register</string>
+    <string name="err_msg_enter_username">Enter your Username</string>
+    <string name="err_msg_enter_email">Enter your Email</string>
+    <string name="err_msg_enter_pwd">Enter your Password</string>
+    <string name="err_msg_enter_repeat_pwd">Please repeat your password</string>
+    <string name="err_msg_pwd_mismatch">passwords do not match</string>
+    <string name="registered_successfully">Registered Successfully</string>
+    <string name="registration_failed">Couldn\'t register</string>
+    <string name="please_wait">Please wait</string>
 </resources>

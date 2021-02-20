@@ -50,10 +50,11 @@
         app:layout_constraintVertical_bias="0.19999999">
 
         <Button
-            android:id="@+id/startBtnSignUp"
+            android:id="@+id/btn_SignUp"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/white_button"
+            android:foreground="?attr/selectableItemBackground"
             android:drawableStart="@drawable/ic_sign_up_icon"
             android:fontFamily="@font/tgrld"
             android:letterSpacing="0.075"
@@ -98,12 +99,13 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/startBtnGoogle"
+            android:id="@+id/btn_GoogleSignIn"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/google_sign_in_button"
             android:fontFamily="@font/tgrld"
+            android:foreground="?attr/selectableItemBackground"
             android:textAllCaps="false"
             android:drawableStart="@drawable/ic_google"
             android:text="Sign in with google"
@@ -113,7 +115,7 @@
             android:textSize="18dp" />
 
         <Button
-            android:id="@+id/startBtnFacebook"
+            android:id="@+id/btn_FacebookSignIn"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:textAllCaps="false"
@@ -123,12 +125,13 @@
             android:text="Sign in with Facebook"
             android:paddingStart="15dp"
             android:paddingEnd="15dp"
+            android:foreground="?attr/selectableItemBackground"
             android:drawableStart="@drawable/ic_facebook"
             android:textColor="#FFFFFF"
             android:textSize="18dp" />
 
         <Button
-            android:id="@+id/startBtnApple"
+            android:id="@+id/btn_AppleSignIn"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
@@ -137,6 +140,7 @@
             android:text="Sign in with Apple"
             android:paddingStart="20dp"
             android:paddingEnd="45dp"
+            android:foreground="?attr/selectableItemBackground"
             android:drawableStart="@drawable/ic_apple"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
@@ -145,7 +149,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/startBtnSignIn"
+        android:id="@+id/btn_SignIn"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="40dp"
@@ -173,6 +177,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/tgrld"
+            android:foreground="?attr/selectableItemBackground"
             android:text="@string/sign_in"
             android:textAlignment="center"
             android:textColor="@color/AeedzDark"

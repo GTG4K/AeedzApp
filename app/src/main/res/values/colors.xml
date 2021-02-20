@@ -3,7 +3,9 @@
     <color name="AeedzDark">#1D1D1D</color>
     <color name="AeedzLight">#3D3D3D</color>
     <color name="AeedzWhite">#DFDFDF</color>
+    <color name="Success">#52FF59</color>
     <color name="GoogleRed">#EA4336</color>
     <color name="FacebookBlue">#1267D6</color>
     <color name="AppleBlack">#0D0D0D</color>
+
 </resources>

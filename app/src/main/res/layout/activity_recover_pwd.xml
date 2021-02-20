@@ -16,6 +16,7 @@
         android:paddingTop="30dp"
         android:paddingEnd="30dp"
         android:paddingBottom="30dp"
+        android:foreground="?attr/selectableItemBackground"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.059"
@@ -68,7 +69,7 @@
             android:textSize="25sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/et_Email"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="20dp"
@@ -86,11 +87,12 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_Register"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_weight="1"
                 android:background="@drawable/white_button"
+                android:foreground="?attr/selectableItemBackground"
                 android:fontFamily="@font/tgrld"
                 android:text="@string/login"
                 android:textAlignment="center"
