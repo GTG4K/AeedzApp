@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
+import android.util.Patterns
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -12,6 +13,7 @@ import kotlinx.android.synthetic.main.activity_register.*
 class RegisterActivity : BaseActivity() {
 
     private lateinit var auth: FirebaseAuth
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,10 +26,14 @@ class RegisterActivity : BaseActivity() {
         } //Sign in button
 
         btn_Register.setOnClickListener {
-            registerUser()
-            val mainIntent = Intent(this, MainActivity::class.java)
-            startActivity(mainIntent)
-            finish()
+            if (validateRegisterDetails()) {
+                registerUser()
+                val mainIntent = Intent(this, MainActivity::class.java)
+                startActivity(mainIntent)
+            }
+            else {
+
+            }
         }
     }
 
@@ -45,6 +51,12 @@ class RegisterActivity : BaseActivity() {
                 showErrorSnackBar(resources.getString(R.string.err_msg_enter_email), true)
                 false
             }
+
+            !Patterns.EMAIL_ADDRESS.matcher(et_Email.text.toString()).matches() -> {
+                showErrorSnackBar("Email format is not acceptable", true)
+                false
+            }
+
             TextUtils.isEmpty(et_Pwd.text.toString().trim { it <=' '}) -> {
                 showErrorSnackBar(resources.getString(R.string.err_msg_enter_pwd), true)
                 false
